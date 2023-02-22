@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "513456135145",
+    "project_id": "ventrinalive",
+    "storage_bucket": "ventrinalive.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:513456135145:android:8ddd62fd33888277d58978",
+        "android_client_info": {
+          "package_name": "com.react_native_vetrina"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "513456135145-bfrm6aolu0mbabq785lsduphea564taa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAmwnA7W1ojshr5PROAF4D2oaGZqTUiFoo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "513456135145-bfrm6aolu0mbabq785lsduphea564taa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
