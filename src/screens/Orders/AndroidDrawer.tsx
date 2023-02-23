@@ -5,7 +5,7 @@ import {
   StyleSheet,
   View,
 } from 'react-native';
-import DrawerTabs from './components/DrawerTabs/DrawerTabs';
+import DrawerTabs from '../../components/DrawerTabs/DrawerTabs';
 import { getUsers } from 'src/api/getUsers';
 import Orders from './Orders';
 import { allOrdersStatus } from 'src/utils/getRandomStatus';

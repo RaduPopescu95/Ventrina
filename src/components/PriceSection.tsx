@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text } from 'react-native';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
-import { styles } from '../OrderInfoTab.style';
+import { styles } from '../screens/Orders/OrderInfoTab/OrderInfoTab.style';
 import { selectColor } from 'src/utils/selectColor';
 
 const PriceSection = ({ user }: any) => {

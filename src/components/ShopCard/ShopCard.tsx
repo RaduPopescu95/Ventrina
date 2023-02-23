@@ -14,7 +14,6 @@ const ShopCard = () => {
       }
       title="Configure your shop!"
       linkText="Complete the configuration"
-
       linkIcon={
         <AntDesign name="arrowright" size={24} color={colors.light.blue} />
       }

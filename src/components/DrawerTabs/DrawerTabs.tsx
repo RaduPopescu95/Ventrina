@@ -1,7 +1,7 @@
 import React from 'react';
 import { View } from 'react-native';
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
-import OrderInfoTab from '../OrderInfoTab/OrderInfoTab';
+import OrderInfoTab from '../../screens/Orders/OrderInfoTab/OrderInfoTab';
 import ProductsTab from '../ProductsTab/ProductsTab';
 import ShippingTab from '../ShippingTab/ShippingTab';
 import DrawerHeader from '../DrawerHeader/DrawerHeader';

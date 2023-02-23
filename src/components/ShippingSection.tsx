@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text } from 'react-native';
 import Feather from 'react-native-vector-icons/Feather';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
-import { styles } from '../OrderInfoTab.style';
+import { styles } from '../screens/Orders/OrderInfoTab/OrderInfoTab.style';
 
 const ShippingSection = ({ user }: any) => {
   return (
