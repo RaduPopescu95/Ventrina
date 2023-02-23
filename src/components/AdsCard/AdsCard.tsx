@@ -2,7 +2,7 @@ import React from 'react';
 import { Text, View, Image } from 'react-native';
 import Card from 'src/components/Card/Card';
 import AntDesign from 'react-native-vector-icons/AntDesign';
-import colors from 'src/constants/colors';
+import colors from 'src/data/colors';
 import { styles } from './AdsCard.style';
 
 const AdsCard = () => {

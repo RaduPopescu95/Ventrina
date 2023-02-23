@@ -2,7 +2,7 @@ import React from 'react';
 import { View, TouchableOpacity } from 'react-native';
 import AntDesign from 'react-native-vector-icons/AntDesign';
 import { styles } from '../DrawerNavigator.styles';
-import colors from 'src/constants/colors';
+import colors from 'src/data/colors';
 
 const HeaderRight = () => {
   return (

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { View, StyleSheet, ActivityIndicator } from 'react-native';
-import ProductsHeader from '../../components/ProductsHeader/ProductsHeader';
-import ProductsTable from '../../components/ProductsTable/ProductsTable';
+import ProductsHeader from '../../components/Product/ProductsHeader/ProductsHeader';
+import ProductsTable from '../../components/Product/ProductsTable/ProductsTable';
 import NewProduct from './NewProduct/NewProduct';
 import useMockup from 'src/hooks/useMockup';
 

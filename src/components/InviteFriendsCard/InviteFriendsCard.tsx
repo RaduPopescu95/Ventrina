@@ -3,7 +3,7 @@ import { Text, Linking } from 'react-native';
 import Card from 'src/components/Card/Card';
 import AntDesign from 'react-native-vector-icons/AntDesign';
 import { styles } from './InviteFriendsCard.style';
-import colors from 'src/constants/colors';
+import colors from 'src/data/colors';
 
 const InviteFriendsCard = () => {
   return (

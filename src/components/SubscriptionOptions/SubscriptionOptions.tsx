@@ -4,7 +4,7 @@ import { View, Text, StyleSheet } from 'react-native';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import { styles } from './SubscriptionOptions.style';
-import colors from 'src/constants/colors';
+import colors from 'src/data/colors';
 
 type Props = {
   title?: string | undefined;

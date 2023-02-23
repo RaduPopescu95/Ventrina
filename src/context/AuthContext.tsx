@@ -11,8 +11,8 @@ export const AuthProvider = ({ children }: any): JSX.Element | null => {
   const [initializing, setInitializing] = useState(true);
   const [user, setUser] = useState();
 
-  function onAuthStateChanged(user) {
-    setUser(user);
+  function onAuthStateChanged(userCurrent: any) {
+    setUser(userCurrent);
     if (initializing) {
       setInitializing(false);
     }

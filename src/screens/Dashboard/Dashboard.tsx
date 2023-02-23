@@ -7,7 +7,7 @@ import MarketplaceCard from '../../components/MarketplaceCard';
 import AdsCard from '../../components/AdsCard/AdsCard';
 import ShopCard from '../../components/ShopCard/ShopCard';
 import VisitorsCard from '../../components/VisitorsCard/VisitorsCard';
-import OrdersCard from '../../components/OrdersCard/OrdersCard';
+import OrdersCard from '../../components/OrdersComponents/OrdersCard/OrdersCard';
 import SupportCard from '../../components/SupportCard/SupportCard';
 import InviteFriendsCard from '../../components/InviteFriendsCard/InviteFriendsCard';
 import DashboardCards from 'src/components/DashboardCards';

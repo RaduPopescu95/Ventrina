@@ -3,7 +3,7 @@ import { View, Text, StyleSheet } from 'react-native';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import Feather from 'react-native-vector-icons/Feather';
 import { styles } from './OrdersHeader.style';
-import colors from 'src/constants/colors';
+import colors from 'src/data/colors';
 
 const OrdersHeader = ({ total }: any) => {
   return (

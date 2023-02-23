@@ -1,6 +1,6 @@
 import React from 'react';
 import { Text as DefaultText, View as DefaultView } from 'react-native';
-import Colors from '../constants/colors';
+import Colors from '../data/colors';
 import useColorScheme from '../hooks/useColorScheme';
 
 export function useThemeColor(

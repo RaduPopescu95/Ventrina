@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { View } from 'react-native';
 import InfoTab from '../../../components/InfoTab';
-import NewProductHeader from '../../../components/NewProductHeader/NewProductHeader';
+import NewProductHeader from '../../../components/Product/NewProductHeader/NewProductHeader';
 import VariantsTab from '../../../components/VariantsTab';
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
 import { styles } from './NewProduct.style';
-import colors from 'src/constants/colors';
+import colors from 'src/data/colors';
 
 type Props = {
   hanldeAddProduct: (id?: number) => void;

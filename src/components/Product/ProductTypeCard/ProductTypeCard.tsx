@@ -3,7 +3,7 @@ import { View, Text } from 'react-native';
 import EmptyCard from 'src/components/EmptyCard/EmptyCard';
 import { RadioButton } from 'react-native-paper';
 import { styles } from './ProductTypeCard.style';
-import colors from 'src/constants/colors';
+import colors from 'src/data/colors';
 
 const ProductTypeCard = () => {
   const [checked, setChecked] = React.useState('first');

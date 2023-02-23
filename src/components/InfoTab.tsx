@@ -4,7 +4,7 @@ import { ScrollView } from 'react-native-gesture-handler';
 import DetailsCard from './DetailsCard/DetailsCard';
 import GeneralInfomationCard from './GenInfoCard/GenInfoCard';
 import PriceCard from './PriceCard/PriceCard';
-import ProductTypeCard from './ProductTypeCard/ProductTypeCard';
+import ProductTypeCard from './Product/ProductTypeCard/ProductTypeCard';
 
 type Props = {
   navigation: any;

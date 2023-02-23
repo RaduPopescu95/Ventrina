@@ -1,4 +1,4 @@
-import colors from 'src/constants/colors';
+import colors from 'src/data/colors';
 
 export const selectColor = (state: string | undefined) => {
   let color = '';

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { View, Text, Image, Alert } from 'react-native';
 import SimpleLineIcons from 'react-native-vector-icons/SimpleLineIcons';
 import { styles } from './TableRow.style';
-import colors from 'src/constants/colors';
+import colors from 'src/data/colors';
 import { Button, Menu, Divider } from 'react-native-paper';
 
 type Props = {

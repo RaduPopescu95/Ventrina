@@ -5,7 +5,7 @@ import CheckBox from '@react-native-community/checkbox';
 import Foundation from 'react-native-vector-icons/Foundation';
 import { TextInput } from 'react-native-gesture-handler';
 import { styles } from './PriceCard.style';
-import colors from 'src/constants/colors';
+import colors from 'src/data/colors';
 
 type Props = {
   product?: {

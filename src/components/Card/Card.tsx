@@ -2,7 +2,7 @@ import React from 'react';
 import { GestureResponderEvent } from 'react-native';
 import { Text, TouchableWithoutFeedback, View } from 'react-native';
 import { styles } from './Card.style';
-import colors from 'src/constants/colors';
+import colors from 'src/data/colors';
 
 type Props = {
   children?: JSX.Element | React.ReactNode | React.ReactElement;

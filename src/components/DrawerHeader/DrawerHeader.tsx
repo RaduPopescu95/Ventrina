@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, TouchableOpacity, Text, Image } from 'react-native';
 import AntDesign from 'react-native-vector-icons/AntDesign';
-import colors from 'src/constants/colors';
+import colors from 'src/data/colors';
 import { styles } from './DrawerHeader.style';
 
 const DrawerHeader = ({ closeDrawer, orderNumber }: any) => {

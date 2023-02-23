@@ -1,7 +1,7 @@
 import React from 'react';
 import { View } from 'react-native';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
-import colors from 'src/constants/colors';
+import colors from 'src/data/colors';
 
 const MenuArrows = () => {
   return (

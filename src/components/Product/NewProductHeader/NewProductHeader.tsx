@@ -3,7 +3,7 @@ import { View, Text } from 'react-native';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import { styles } from './NewProductHeader.style';
-import colors from 'src/constants/colors';
+import colors from 'src/data/colors';
 
 const NewProductHeader = ({ hanldeAddProduct }: any) => {
   return (

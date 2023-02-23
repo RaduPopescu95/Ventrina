@@ -5,7 +5,7 @@ import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 import Feather from 'react-native-vector-icons/Feather';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import { styles } from './GenInfoCard.style';
-import colors from 'src/constants/colors';
+import colors from 'src/data/colors';
 
 const DescriptionIcons = () => {
   return (

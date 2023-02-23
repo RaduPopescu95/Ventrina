@@ -2,11 +2,11 @@ import React from 'react';
 import { View } from 'react-native';
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
 import OrderInfoTab from '../../screens/Orders/OrderInfoTab/OrderInfoTab';
-import ProductsTab from '../ProductsTab/ProductsTab';
+import ProductsTab from '../Product/ProductsTab/ProductsTab';
 import ShippingTab from '../ShippingTab/ShippingTab';
 import DrawerHeader from '../DrawerHeader/DrawerHeader';
 import { styles } from './DrawerTabs.style';
-import colors from 'src/constants/colors';
+import colors from 'src/data/colors';
 import { User } from 'src/screens/Orders/AndroidDrawer';
 
 type Props = {

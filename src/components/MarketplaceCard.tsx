@@ -6,7 +6,7 @@ import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import AntDesign from 'react-native-vector-icons/AntDesign';
 import { ScrollView } from 'react-native-gesture-handler';
 import ExtensionCard from 'src/components/ExtensionCard/ExtensionCard';
-import colors from 'src/constants/colors';
+import colors from 'src/data/colors';
 
 const MarketplaceCard = () => {
   return (

@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text, TouchableOpacity } from 'react-native';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import { styles } from './TableFooter.style';
-import colors from 'src/constants/colors';
+import colors from 'src/data/colors';
 
 const TableFooter = () => {
   return (

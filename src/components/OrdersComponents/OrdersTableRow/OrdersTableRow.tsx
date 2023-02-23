@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { View, Text, TouchableOpacity } from 'react-native';
 import SimpleLineIcons from 'react-native-vector-icons/SimpleLineIcons';
 import CheckBox from '@react-native-community/checkbox';
-import colors from 'src/constants/colors';
+import colors from 'src/data/colors';
 import { styles } from './OrdersTableRow.style';
 import { selectColor } from 'src/utils/selectColor';
 

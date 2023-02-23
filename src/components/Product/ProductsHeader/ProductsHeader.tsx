@@ -3,7 +3,7 @@ import { View, Text, StyleSheet, Switch } from 'react-native';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import { styles } from './ProductsHeader.style';
-import colors from 'src/constants/colors';
+import colors from 'src/data/colors';
 
 type Props = {
   hanldeAddProduct: () => void | undefined;

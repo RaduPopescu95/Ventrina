@@ -1,9 +1,9 @@
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
 import EmptyCard from 'src/components/EmptyCard/EmptyCard';
-import OrdersHeader from '../../components/OrdersHeader/OrdersHeader';
-import OrdersTableRow from '../../components/OrdersTableRow/OrdersTableRow';
-import OrdersTableHeader from '../../components/OrdersTableHeader/OrdersTableHeader';
+import OrdersHeader from '../../components/OrdersComponents/OrdersHeader/OrdersHeader';
+import OrdersTableRow from '../../components/OrdersComponents/OrdersTableRow/OrdersTableRow';
+import OrdersTableHeader from '../../components/OrdersComponents/OrdersTableHeader/OrdersTableHeader';
 import { ScrollView } from 'react-native-gesture-handler';
 import { User } from './AndroidDrawer';
 

@@ -1,9 +1,9 @@
 import React from 'react';
 import { View } from 'react-native';
 import { ScrollView } from 'react-native-gesture-handler';
-import TableRow from '../TableRow/TableRow';
-import TableHead from '../TableHead/TableHead';
-import TableFooter from '../TableFooter/TableFooter';
+import TableRow from '../../TableRow/TableRow';
+import TableHead from '../../TableHead/TableHead';
+import TableFooter from '../../TableFooter/TableFooter';
 import EmptyCard from 'src/components/EmptyCard/EmptyCard';
 import { styles } from './ProductsTable.style';
 

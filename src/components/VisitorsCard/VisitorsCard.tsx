@@ -4,7 +4,7 @@ import Card from 'src/components/Card/Card';
 import Feather from 'react-native-vector-icons/Feather';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import AntDesign from 'react-native-vector-icons/AntDesign';
-import colors from 'src/constants/colors';
+import colors from 'src/data/colors';
 import { styles } from './VisitorsCard.style';
 
 const VisitorsCard = () => {

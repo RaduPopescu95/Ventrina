@@ -1,5 +1,5 @@
 import { StyleSheet } from 'react-native';
-import colors from 'src/constants/colors';
+import colors from 'src/data/colors';
 
 export const styles = StyleSheet.create({
   row: {
@@ -21,15 +21,14 @@ export const styles = StyleSheet.create({
     width: '40%',
     height: '100%',
     borderRightWidth: 0.5,
-    flexDirection: 'row',
-    alignItems: 'center',
+    justifyContent: 'center',
   },
   box3: {
     width: '30%',
     height: '100%',
     borderRightWidth: 0.5,
+    justifyContent: 'center',
     alignItems: 'center',
-    flexDirection: 'row',
   },
   box4: {
     width: '10%',
@@ -38,10 +37,9 @@ export const styles = StyleSheet.create({
     alignItems: 'center',
   },
   text: {
-    color: colors.light.darkBlue,
-    fontSize: 18,
-    marginLeft: 10,
-    marginRight: 10,
+    color: colors.light.newText,
+    fontSize: 16,
+    marginLeft: 15,
   },
   button: {
     height: 40,
@@ -50,15 +48,12 @@ export const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
-  header1: {
-    color: colors.light.darkBlue,
-    fontSize: 18,
-    marginRight: 5,
+  buttonText: {
+    color: colors.light.white,
+    fontSize: 14,
   },
-  touchArea: {
-    width: '100%',
-    height: '100%',
-    flexDirection: 'row',
-    alignItems: 'center',
+  column1Text: {
+    color: colors.light.newText,
+    fontSize: 14,
   },
 });
