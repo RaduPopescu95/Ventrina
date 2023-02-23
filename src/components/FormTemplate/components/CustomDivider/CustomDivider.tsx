@@ -1,8 +1,8 @@
 import React from 'react';
 import { View, Text } from 'react-native';
-import { styles } from './Divider.style';
+import { styles } from './CustomDivider.style';
 
-const Divider = () => {
+const CustomDivider = () => {
   return (
     <View style={styles.separator}>
       <View style={[styles.divider, styles.dividerMarginR]} />
@@ -12,4 +12,4 @@ const Divider = () => {
   );
 };
 
-export default Divider;
+export default CustomDivider;

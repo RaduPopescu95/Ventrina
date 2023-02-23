@@ -1,18 +1,31 @@
 import React from 'react';
 import { TouchableOpacity, Text, View } from 'react-native';
-import Divider from './components/Divider/Divider';
+import CustomDivider from './components/CustomDivider/CustomDivider';
 import FormHeader from './components/FormHeader/FormHeader';
 import ExtraOptions from './components/ExtraOptions/ExtraOptions';
-import Support from './components/Support/Support';
-import { FormTemplateProps } from './formTemplateTypes';
+import SupportBtn from './components/SupportBtn/SupportBtn';
 import { styles } from './CustomForm.style';
 
-const FormTemplate = (props: FormTemplateProps) => {
+type CustomFormProps = {
+  navigation: any;
+  children: React.ReactNode;
+  title: string;
+  subtitle: string;
+  submitText: string;
+  divider: boolean;
+  extraOptions: boolean;
+  footer1: string;
+  footer2?: string;
+  footerLink: string;
+  submitAction: any;
+  footerAction: any;
+};
+
+const CustomForm = (props: CustomFormProps) => {
   const {
     navigation,
     children,
     submitText,
-    submitAction,
     divider,
     footer1,
     footer2,
@@ -21,6 +34,7 @@ const FormTemplate = (props: FormTemplateProps) => {
     title,
     subtitle,
     footerAction,
+    submitAction,
   } = props;
 
   return (
@@ -32,7 +46,7 @@ const FormTemplate = (props: FormTemplateProps) => {
           <Text style={styles.submitText}>{submitText}</Text>
         </TouchableOpacity>
       )}
-      {divider && <Divider />}
+      {divider && <CustomDivider />}
       {extraOptions && <ExtraOptions />}
       {footer2 && (
         <TouchableOpacity onPress={() => navigation.navigate('ResetPassword')}>
@@ -51,9 +65,9 @@ const FormTemplate = (props: FormTemplateProps) => {
           </TouchableOpacity>
         </View>
       )}
-      <Support />
+      <SupportBtn />
     </>
   );
 };
 
-export default FormTemplate;
+export default CustomForm;

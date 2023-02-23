@@ -42,8 +42,8 @@ const Login = (props: LoginProps) => {
           submitAction={() => handleLogin(email, password)}
           divider={true}
           extraOptions={true}
-          footerText1="Did you forget your password?"
-          footerText2="Don't you have an account?"
+          footer1="Did you forget your password?"
+          footer2="Don't you have an account?"
           footerLink="Sign up now"
           footerAction={() => navigation.navigate('SignUp')}>
           <TextInput
