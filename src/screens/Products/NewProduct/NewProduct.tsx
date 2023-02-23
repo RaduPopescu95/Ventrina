@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { View } from 'react-native';
-import InfoTab from './components/InfoTab';
-import NewProductHeader from './components/NewProductHeader/NewProductHeader';
-import VariantsTab from './components/VariantsTab';
+import InfoTab from '../../../components/InfoTab';
+import NewProductHeader from '../../../components/NewProductHeader/NewProductHeader';
+import VariantsTab from '../../../components/VariantsTab';
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
 import { styles } from './NewProduct.style';
 import colors from 'src/constants/colors';

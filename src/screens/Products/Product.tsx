@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { View, StyleSheet, ActivityIndicator } from 'react-native';
 import ProductsHeader from '../../components/ProductsHeader/ProductsHeader';
 import ProductsTable from '../../components/ProductsTable/ProductsTable';
-import NewProduct from './components/NewProduct/NewProduct';
+import NewProduct from './NewProduct/NewProduct';
 import useMockup from 'src/hooks/useMockup';
 
 const Product = () => {
