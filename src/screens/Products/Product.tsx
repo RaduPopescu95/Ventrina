@@ -4,19 +4,21 @@ import ProductsHeader from './components/ProductsHeader/ProductsHeader';
 import ProductsTable from './components/ProductsTable/ProductsTable';
 import NewProduct from './components/NewProduct/NewProduct';
 import { getProducts } from 'src/api/getProducts';
+import useMockup from 'src/hooks/useMockup';
 
-const Product = ({ navigation }: any) => {
+const Product = () => {
   const [addProduct, setAddProduct] = useState<boolean>(false);
-  const [isLoading, setLoading] = useState<boolean>(true);
-  const [data, setData] = useState<[]>([]);
-  const [product, setProduct] = useState<{
-    id?: number;
-    title?: string;
-    price?: string;
-    cathegory?: string;
-    description?: string;
-    image?: string;
-  }>({});
+  const { data, product, isLoading, setProduct, setData, setLoading } = useMockup();
+  // const [isLoading, setLoading] = useState<boolean>(true);
+  // const [data, setData] = useState<[]>([]);
+  // const [product, setProduct] = useState<{
+  //   id?: number;
+  //   title?: string;
+  //   price?: string;
+  //   cathegory?: string;
+  //   description?: string;
+  //   image?: string;
+  // }>({});
 
   const hanldeAddProduct = (id?: number): void => {
     if (id) {
@@ -27,9 +29,10 @@ const Product = ({ navigation }: any) => {
     setAddProduct(!addProduct);
   };
 
-  useEffect(() => {
-    getProducts(setData, setLoading, setProduct);
-  }, []);
+  // useEffect(() => {
+  //   getProducts(setData, setLoading, setProduct);
+
+  // }, []);
 
   if (addProduct) {
     return (

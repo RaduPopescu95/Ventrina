@@ -3,10 +3,10 @@ import Card from 'src/components/Card/Card';
 import SimpleLineIcons from 'react-native-vector-icons/SimpleLineIcons';
 import AntDesign from 'react-native-vector-icons/AntDesign';
 import { Linking, Text, View } from 'react-native';
-import { styles } from './ConfigureShopCard.style';
+import { styles } from './ShopCard.style';
 import colors from 'src/constants/colors';
 
-const ConfigureShopCard = () => {
+const ShopCard = () => {
   return (
     <Card
       icon={
@@ -14,7 +14,7 @@ const ConfigureShopCard = () => {
       }
       title="Configure your shop!"
       linkText="Complete the configuration"
-      linkAction={() => Linking.openURL('http://google.com')}
+
       linkIcon={
         <AntDesign name="arrowright" size={24} color={colors.light.blue} />
       }
@@ -33,4 +33,4 @@ const ConfigureShopCard = () => {
   );
 };
 
-export default ConfigureShopCard;
+export default ShopCard;

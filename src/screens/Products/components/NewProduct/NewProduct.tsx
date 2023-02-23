@@ -35,7 +35,7 @@ const NewProduct = ({ hanldeAddProduct, product }: Props) => {
         <Tab.Screen name="Info">
           {props => <InfoTab {...props} product={product} />}
         </Tab.Screen>
-        <Tab.Screen name="Varinats" component={VariantsTab} />
+        <Tab.Screen name="Variants" component={VariantsTab} />
       </Tab.Navigator>
     </View>
   );

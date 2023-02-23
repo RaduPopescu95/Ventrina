@@ -8,7 +8,7 @@ import { ScrollView } from 'react-native-gesture-handler';
 import ExtensionCard from 'src/components/ExtensionCard/ExtensionCard';
 import colors from 'src/constants/colors';
 
-const ExtensionsMarketplaceCard = () => {
+const MarketplaceCard = () => {
   return (
     <Card
       icon={
@@ -64,4 +64,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default ExtensionsMarketplaceCard;
+export default MarketplaceCard;
