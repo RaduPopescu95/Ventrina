@@ -5,7 +5,7 @@ import FormHeader from './components/FormHeader/FormHeader';
 import ExtraOptions from './components/ExtraOptions/ExtraOptions';
 import Support from './components/Support/Support';
 import { FormTemplateProps } from './formTemplateTypes';
-import { styles } from './FormTemplate.style';
+import { styles } from './CustomForm.style';
 
 const FormTemplate = (props: FormTemplateProps) => {
   const {
@@ -14,8 +14,8 @@ const FormTemplate = (props: FormTemplateProps) => {
     submitText,
     submitAction,
     divider,
-    footerText1,
-    footerText2,
+    footer1,
+    footer2,
     footerLink,
     extraOptions,
     title,
@@ -34,17 +34,17 @@ const FormTemplate = (props: FormTemplateProps) => {
       )}
       {divider && <Divider />}
       {extraOptions && <ExtraOptions />}
-      {footerText2 && (
+      {footer2 && (
         <TouchableOpacity onPress={() => navigation.navigate('ResetPassword')}>
-          <Text style={styles.resetPass}>{footerText1}</Text>
+          <Text style={styles.resetPass}>{footer1}</Text>
         </TouchableOpacity>
       )}
       {footerLink && (
         <View style={styles.formFooter}>
-          {footerText2 ? (
-            <Text>{footerText2} </Text>
-          ) : footerText1 ? (
-            <Text>{footerText1} </Text>
+          {footer2 ? (
+            <Text>{footer2} </Text>
+          ) : footer1 ? (
+            <Text>{footer1} </Text>
           ) : null}
           <TouchableOpacity onPress={footerAction}>
             <Text style={styles.redirect}>{footerLink}</Text>

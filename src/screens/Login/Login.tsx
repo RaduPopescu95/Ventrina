@@ -1,41 +1,40 @@
 import React, { useState } from 'react';
 import { TextInput, View } from 'react-native';
-import FormTemplate from 'src/components/FormTemplate/FormTemplate';
+import CustomForm from 'src/components/FormTemplate/CustomForm';
 import { styles } from './Login.style';
 import { NativeSyntheticEvent, TextInputChangeEventData } from 'react-native';
-import CompanyText from 'src/components/Header/CompanyText/CompanyText';
+import CompanyNameTitle from 'src/components/Header/CompanyName/CompanyNameTitle';
 import Header from 'src/components/Header/Header/Header';
 import { handleLogin } from 'src/api/auth/handleLogin';
 
-type LoginScreenProps = {
+type LoginProps = {
   navigation: any;
 };
 
-const Login = (props: LoginScreenProps) => {
+const Login = (props: LoginProps) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const { navigation } = props;
 
   const handleEmail = (
     event: NativeSyntheticEvent<TextInputChangeEventData>,
-  ): void => {
+  ) => {
     setEmail(event.nativeEvent.text);
   };
 
   const handlePassword = (
     event: NativeSyntheticEvent<TextInputChangeEventData>,
-  ): void => {
+  ) => {
     setPassword(event.nativeEvent.text);
   };
 
-  const { navigation } = props;
-
   return (
-    <View style={styles.container}>
+    <View style={styles.viewContainer}>
       <Header>
-        <CompanyText />
+        <CompanyNameTitle />
       </Header>
-      <View style={styles.body}>
-        <FormTemplate
+      <View style={styles.viewBody}>
+        <CustomForm
           navigation={navigation}
           title="Welcome"
           subtitle="Enter your email and password to enter your account."
@@ -60,7 +59,7 @@ const Login = (props: LoginScreenProps) => {
             onChange={handlePassword}
             secureTextEntry={true}
           />
-        </FormTemplate>
+        </CustomForm>
       </View>
     </View>
   );

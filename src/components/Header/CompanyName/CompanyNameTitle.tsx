@@ -1,8 +1,8 @@
 import React from 'react';
 import { Text } from 'react-native';
-import { styles } from './CompanyText.style';
+import { styles } from './CompanyNameTitle.style';
 
-const CompanyText = () => {
+const CompanyNameTitle = () => {
   return (
     <Text>
       <Text style={styles.title1}>vetrina</Text>
@@ -11,4 +11,4 @@ const CompanyText = () => {
   );
 };
 
-export default CompanyText;
+export default CompanyNameTitle;

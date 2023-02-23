@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import FormTemplate from 'src/components/FormTemplate/FormTemplate';
-import CompanyText from 'src/components/Header/CompanyText/CompanyText';
+import FormTemplate from 'src/components/FormTemplate/CustomForm';
+import CompanyText from 'src/components/Header/CompanyName/CompanyNameTitle';
 import Header from 'src/components/Header/Header/Header';
 import { TextInput, View } from 'react-native';
 import { styles } from './SignUp.style';

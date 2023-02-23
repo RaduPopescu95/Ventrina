@@ -2,13 +2,13 @@ import { StyleSheet } from 'react-native';
 import colors from 'src/constants/colors';
 
 export const styles = StyleSheet.create({
-  container: {
-    flex: 1,
+  viewContainer: {
     alignItems: 'center',
     justifyContent: 'center',
+    flex: 1,
   },
   title: {},
-  body: {
+  viewBody: {
     flex: 9,
     width: '100%',
     paddingTop: 10,
