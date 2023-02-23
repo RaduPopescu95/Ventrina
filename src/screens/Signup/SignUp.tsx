@@ -1,42 +1,47 @@
 import React, { useState } from 'react';
-import FormTemplate from 'src/components/FormTemplate/CustomForm';
-import CompanyText from 'src/components/Header/CompanyName/CompanyNameTitle';
+import CustomForm from 'src/components/FormTemplate/CustomForm';
+import CompanyNameTitle from 'src/components/Header/CompanyName/CompanyNameTitle';
 import Header from 'src/components/Header/Header/Header';
 import { TextInput, View } from 'react-native';
 import { styles } from './SignUp.style';
 import { NativeSyntheticEvent, TextInputChangeEventData } from 'react-native';
 import { handleSignup } from 'src/api/auth/handleSignup';
 
-const SignUp = ({ navigation }: any): JSX.Element => {
+type SignUpProps = {
+  navigation: any;
+};
+
+const SignUp = (props: SignUpProps): JSX.Element => {
   const [shopName, setShopName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const { navigation } = props;
 
   const handleshopName = (
     event: NativeSyntheticEvent<TextInputChangeEventData>,
-  ): void => {
+  ) => {
     setShopName(event.nativeEvent.text);
   };
 
   const handleEmail = (
     event: NativeSyntheticEvent<TextInputChangeEventData>,
-  ): void => {
+  ) => {
     setEmail(event.nativeEvent.text);
   };
 
   const handlePassword = (
     event: NativeSyntheticEvent<TextInputChangeEventData>,
-  ): void => {
+  ) => {
     setPassword(event.nativeEvent.text);
   };
 
   return (
     <View style={styles.container}>
       <Header navigation={navigation}>
-        <CompanyText />
+        <CompanyNameTitle />
       </Header>
       <View style={styles.body}>
-        <FormTemplate
+        <CustomForm
           navigation={navigation}
           title="Create your e-commerce"
           subtitle="Try Vetrina Live for free in the next 7 days. Open a shop in few minutes! No credit card required."
@@ -44,7 +49,7 @@ const SignUp = ({ navigation }: any): JSX.Element => {
           submitAction={() => handleSignup(shopName, email, password)}
           divider={true}
           extraOptions={true}
-          footerText1="Do you have an account?"
+          footer1="Do you have an account?"
           footerLink="Sign in now"
           footerAction={() => navigation.navigate('Login')}>
           <TextInput
@@ -66,7 +71,7 @@ const SignUp = ({ navigation }: any): JSX.Element => {
             onChange={handlePassword}
             secureTextEntry={true}
           />
-        </FormTemplate>
+        </CustomForm>
       </View>
     </View>
   );

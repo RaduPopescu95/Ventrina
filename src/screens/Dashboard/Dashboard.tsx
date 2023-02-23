@@ -1,7 +1,7 @@
 import React from 'react';
 import { ScrollView } from 'react-native';
 import { styles } from './Dashboard.style';
-import SubHeader from './components/SubHeader/SubHeader';
+import DashboardHeader from './components/DashboardHeader/DashboardHeader';
 import NewsCard from './components/NewsCard';
 import ExtensionsMarketplaceCard from './components/ExtensionsMarketplaceCard';
 import AdsCard from './components/AdsCard/AdsCard';
@@ -16,7 +16,7 @@ const Dashboard = ({ navigation }: any) => {
     <ScrollView
       style={styles.container}
       contentContainerStyle={styles.contentContainer}>
-      <SubHeader />
+      <DashboardHeader />
       <ConfigureShopCard />
       <VisitorsCard />
       <OrdersCard />
