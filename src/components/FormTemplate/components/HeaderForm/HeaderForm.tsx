@@ -1,13 +1,13 @@
 import React from 'react';
 import { Text, View } from 'react-native';
-import { styles } from './FormHeader.style';
+import { styles } from './HeaderForm.style';
 
-type FormHeaderProps = {
+type HeaderFormProps = {
   title?: string;
   subtitle?: string;
 };
 
-const FormHeader = ({ title, subtitle }: FormHeaderProps) => {
+const HeaderForm = ({ title, subtitle }: HeaderFormProps) => {
   return (
     <View style={styles.titleContainer}>
       <Text style={styles.title}>{title}</Text>
@@ -16,4 +16,4 @@ const FormHeader = ({ title, subtitle }: FormHeaderProps) => {
   );
 };
 
-export default FormHeader;
+export default HeaderForm;

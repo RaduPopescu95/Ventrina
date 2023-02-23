@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Header from 'src/components/Header/Header/Header';
-import CompanyText from 'src/components/Header/CompanyName/CompanyNameTitle';
-import FormTemplate from 'src/components/FormTemplate/CustomForm';
+import CompanyNameTitle from 'src/components/Header/CompanyName/CompanyNameTitle';
+import CustomForm from 'src/components/FormTemplate/CustomForm';
 import {
   TextInput,
   NativeSyntheticEvent,
@@ -11,22 +11,27 @@ import {
 import { styles } from './ResetPassword.style';
 import { handleResetPass } from 'src/api/auth/handleResetPass';
 
-const ResetPassword = ({navigation}: any) => {
+type RestPassProps = {
+  navigation: any;
+};
+
+const ResetPassword = (props: RestPassProps) => {
   const [email, setEmail] = useState('');
+  const { navigation } = props;
 
   const handleEmail = (
     event: NativeSyntheticEvent<TextInputChangeEventData>,
-  ): void => {
+  ) => {
     setEmail(event.nativeEvent.text);
   };
 
   return (
     <View style={styles.container}>
       <Header navigation={navigation}>
-        <CompanyText />
+        <CompanyNameTitle />
       </Header>
       <View style={styles.body}>
-        <FormTemplate
+        <CustomForm
           navigation={navigation}
           title="Forgot Password"
           subtitle="Enter your email and you'll receive an email to recover ypur password."
@@ -34,7 +39,7 @@ const ResetPassword = ({navigation}: any) => {
           submitAction={() => handleResetPass(email, navigation)}
           divider={false}
           extraOptions={false}
-          footerText1="Do you have an account?"
+          footer1="Do you have an account?"
           footerLink="Sign in now"
           footerAction={() => navigation.navigate('Login')}>
           <TextInput
@@ -43,7 +48,7 @@ const ResetPassword = ({navigation}: any) => {
             value={email}
             onChange={handleEmail}
           />
-        </FormTemplate>
+        </CustomForm>
       </View>
     </View>
   );

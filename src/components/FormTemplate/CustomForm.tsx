@@ -1,7 +1,7 @@
 import React from 'react';
 import { TouchableOpacity, Text, View } from 'react-native';
 import CustomDivider from './components/CustomDivider/CustomDivider';
-import FormHeader from './components/FormHeader/FormHeader';
+import HeaderForm from './components/HeaderForm/HeaderForm';
 import ExtraOptions from './components/ExtraOptions/ExtraOptions';
 import SupportBtn from './components/SupportBtn/SupportBtn';
 import { styles } from './CustomForm.style';
@@ -39,7 +39,7 @@ const CustomForm = (props: CustomFormProps) => {
 
   return (
     <>
-      <FormHeader title={title} subtitle={subtitle} />
+      <HeaderForm title={title} subtitle={subtitle} />
       {children}
       {submitAction && (
         <TouchableOpacity style={styles.submit} onPress={submitAction}>
