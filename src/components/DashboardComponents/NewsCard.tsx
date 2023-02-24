@@ -16,7 +16,7 @@ type NewsItem = {
 };
 
 const NewsCard = () => {
- const {data, isLoading, setData, setLoading } = useNewsMockup();
+  const { data, isLoading, setData, setLoading } = useNewsMockup();
 
   return (
     <Card

@@ -10,7 +10,6 @@ export type User = {
 };
 
 const useUserMockup = () => {
-
   const [isLoading, setLoading] = useState(true);
   const [data, setData] = useState([]);
   const [user, setUser] = useState<User>({

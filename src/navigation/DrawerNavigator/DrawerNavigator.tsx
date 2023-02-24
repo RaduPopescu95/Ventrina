@@ -20,6 +20,8 @@ const DrawerNavigator = () => {
         headerTitleStyle: { ...styles.title },
       })}>
       <Drawer.Screen name="Dashboard" component={Dashboard} />
+      <Drawer.Screen name="Subscription" component={Subscription} />
+      <Drawer.Screen name="Payments" component={Payments} />
       <Drawer.Group
         screenOptions={() => ({
           headerRight: () => <HeaderRight />,
@@ -27,8 +29,6 @@ const DrawerNavigator = () => {
         <Drawer.Screen name="Product" component={Product} />
         <Drawer.Screen name="Orders" component={AndroidDrawer} />
       </Drawer.Group>
-      <Drawer.Screen name="Payments" component={Payments} />
-      <Drawer.Screen name="Subscription" component={Subscription} />
     </Drawer.Navigator>
   );
 };
