@@ -11,13 +11,11 @@ export const AuthProvider = ({ children }: any) => {
   const [user, setUser] = useState();
 
   function onAuthStateChanged(userCurrent: any) {
-    console.log('setting user....', userCurrent);
     setUser(userCurrent);
   }
 
   useEffect(() => {
     const subscriber = auth().onAuthStateChanged(onAuthStateChanged);
-    console.log('auth context use EFFECT STARTED, user is...');
     return subscriber; // unsubscribe on unmount
   }, []);
 
