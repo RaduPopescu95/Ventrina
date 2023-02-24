@@ -9,6 +9,7 @@ import DrawerTabs from '../../components/DrawerTabs/DrawerTabs';
 import { getUsers } from 'src/api/getUsers';
 import Orders from './Orders';
 import { allOrdersStatus } from 'src/utils/getRandomStatus';
+import useUserMockup from 'src/hooks/useUsersMockup';
 
 export type User = {
   id: number;
@@ -19,18 +20,10 @@ export type User = {
 };
 
 const AndroidDrawer = ({ navigation }: any) => {
+  const { data, user, isLoading, setUser, setData } = useUserMockup();
   const drawer = useRef<DrawerLayoutAndroid>(null);
   const [toggleCheckBox, setToggleCheckBox] = useState(false);
   const [header, setHeader] = useState(false);
-  const [isLoading, setLoading] = useState(true);
-  const [data, setData] = useState([]);
-  const [user, setUser] = useState<User>({
-    id: 0,
-    password: '',
-    firstName: '',
-    lastName: '',
-    status: '',
-  });
 
   const handleAllCheckbox = () => {
     setToggleCheckBox(prevState => !prevState);
@@ -47,10 +40,6 @@ const AndroidDrawer = ({ navigation }: any) => {
     const userFound = data.find(x => x.id === id);
     setUser(userFound);
   };
-
-  useEffect(() => {
-    getUsers(setData, setLoading, setUser);
-  }, []);
 
   useLayoutEffect(() => {
     navigation.setOptions({ headerShown: header ? false : true });

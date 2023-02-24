@@ -12,7 +12,7 @@ type SignUpProps = {
 };
 
 const SignUp = (props: SignUpProps): JSX.Element => {
-  const [shopName, setShopName] = useState('');
+  const [nameSurname, setNameSurname] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const { navigation } = props;
@@ -20,7 +20,7 @@ const SignUp = (props: SignUpProps): JSX.Element => {
   const handleshopName = (
     event: NativeSyntheticEvent<TextInputChangeEventData>,
   ) => {
-    setShopName(event.nativeEvent.text);
+    setNameSurname(event.nativeEvent.text);
   };
 
   const handleEmail = (
@@ -46,7 +46,7 @@ const SignUp = (props: SignUpProps): JSX.Element => {
           title="Create your e-commerce"
           subtitle="Try Vetrina Live for free in the next 7 days. Open a shop in few minutes! No credit card required."
           submitText="Create your shop"
-          submitAction={() => handleSignup(shopName, email, password)}
+          submitAction={() => handleSignup(nameSurname, email, password)}
           divider={true}
           extraOptions={true}
           footer1="Do you have an account?"
@@ -54,8 +54,8 @@ const SignUp = (props: SignUpProps): JSX.Element => {
           footerAction={() => navigation.navigate('Login')}>
           <TextInput
             style={styles.textInput}
-            placeholder="Shop name"
-            value={shopName}
+            placeholder="Name and Surname"
+            value={nameSurname}
             onChange={handleshopName}
           />
           <TextInput

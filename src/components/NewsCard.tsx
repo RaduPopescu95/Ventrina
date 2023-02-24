@@ -39,7 +39,7 @@ const NewsCard = () => {
         ) : (
           <>
             {data.map((newsItem: NewsItem, index) => {
-              if (index > 5 || !newsItem.urlToImage) {
+              if (index > 2 || !newsItem.urlToImage) {
                 return;
               }
               return (

@@ -1,7 +1,7 @@
-import { getProducts } from './../api/getProducts';
+import { getProducts } from '../api/getProducts';
 import React, { useEffect, useState } from 'react';
 
-const useMockup = () => {
+const useNewsMockup = () => {
   const [isLoading, setLoading] = useState<boolean>(true);
   const [data, setData] = useState<[]>([]);
   const [product, setProduct] = useState<{
@@ -19,4 +19,4 @@ const useMockup = () => {
 
   return { data, product, isLoading, setProduct, setData, setLoading };
 };
-export default useMockup;
+export default useNewsMockup;

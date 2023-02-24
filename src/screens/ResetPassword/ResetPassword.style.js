@@ -14,6 +14,7 @@ export const styles = StyleSheet.create({
     alignItems: 'center',
     paddingLeft: '10%',
     paddingRight: '10%',
+    backgroundColor: colors.light.white,
   },
   textInput: {
     width: '100%',

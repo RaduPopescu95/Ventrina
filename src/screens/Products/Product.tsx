@@ -3,7 +3,7 @@ import { View, StyleSheet, ActivityIndicator } from 'react-native';
 import ProductsHeader from '../../components/Product/ProductsHeader/ProductsHeader';
 import ProductsTable from '../../components/Product/ProductsTable/ProductsTable';
 import NewProduct from './NewProduct/NewProduct';
-import useMockup from 'src/hooks/useMockup';
+import useMockup from 'src/hooks/useProductMockup';
 
 const Product = () => {
   const [addProduct, setAddProduct] = useState<boolean>(false);
