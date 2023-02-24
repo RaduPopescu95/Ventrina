@@ -29,25 +29,19 @@ const OrdersTableHeader = ({
           value={toggleCheckBox}
           onValueChange={handleAllCheckbox}
         />
-        <TouchableOpacity
-          style={styles.touchArea}
-          onPress={() => sortDataById(data, setData)}>
+        <TouchableOpacity style={styles.touchArea}>
           <Text style={styles.header1}>#</Text>
           <MenuArrows />
         </TouchableOpacity>
       </View>
       <View style={styles.box2}>
-        <TouchableOpacity
-          style={styles.touchArea}
-          onPress={() => sortDataByString(data, setData)}>
+        <TouchableOpacity style={styles.touchArea}>
           <Text style={styles.text}>Name</Text>
           <MenuArrows />
         </TouchableOpacity>
       </View>
       <View style={styles.box3}>
-        <TouchableOpacity
-          style={styles.touchArea}
-          onPress={() => sortDataByStatus(data, setData)}>
+        <TouchableOpacity style={styles.touchArea}>
           <Text style={styles.text}>State</Text>
           <MenuArrows />
         </TouchableOpacity>

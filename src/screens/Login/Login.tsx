@@ -16,15 +16,11 @@ const Login = (props: LoginProps) => {
   const [password, setPassword] = useState('');
   const { navigation } = props;
 
-  const handleEmail = (
-    event: NativeSyntheticEvent<TextInputChangeEventData>,
-  ) => {
+  const handleEmail = (event: any) => {
     setEmail(event.nativeEvent.text);
   };
 
-  const handlePassword = (
-    event: NativeSyntheticEvent<TextInputChangeEventData>,
-  ) => {
+  const handlePassword = (event: any) => {
     setPassword(event.nativeEvent.text);
   };
 

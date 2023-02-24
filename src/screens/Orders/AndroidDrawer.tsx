@@ -9,6 +9,7 @@ import DrawerTabs from '../../components/DrawerTabs/DrawerTabs';
 import { getUsers } from 'src/api/getUsers';
 import Orders from './Orders';
 import { allOrdersStatus } from 'src/utils/getRandomStatus';
+import { statusList } from 'src/data/data';
 import useUserMockup from 'src/hooks/useUsersMockup';
 
 export type User = {
