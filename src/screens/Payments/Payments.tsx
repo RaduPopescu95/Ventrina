@@ -3,7 +3,7 @@ import EmptyCard from 'src/components/EmptyCard/EmptyCard';
 import { View, Text, Image, FlatList } from 'react-native';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import { styles } from './Payments.style';
-import { paymentOptions } from 'src/data/paymentOptions';
+import { paymentOptions } from 'src/data/data';
 
 const Payments = () => {
   return (

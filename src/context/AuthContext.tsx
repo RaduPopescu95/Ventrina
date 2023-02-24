@@ -7,25 +7,19 @@ type authContextType = {
 
 export const AuthContext = createContext<authContextType>({ user: false });
 
-export const AuthProvider = ({ children }: any): JSX.Element | null => {
-  const [initializing, setInitializing] = useState(true);
+export const AuthProvider = ({ children }: any) => {
   const [user, setUser] = useState();
 
   function onAuthStateChanged(userCurrent: any) {
+    console.log('setting user....', userCurrent);
     setUser(userCurrent);
-    if (initializing) {
-      setInitializing(false);
-    }
-  };
+  }
 
   useEffect(() => {
     const subscriber = auth().onAuthStateChanged(onAuthStateChanged);
+    console.log('auth context use EFFECT STARTED, user is...');
     return subscriber; // unsubscribe on unmount
   }, []);
-
-  if (initializing) {
-    return null;
-  };
 
   return (
     <AuthContext.Provider value={{ user }}>{children}</AuthContext.Provider>

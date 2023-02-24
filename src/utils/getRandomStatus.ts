@@ -1,4 +1,4 @@
-import { statusList } from 'src/data/statusList';
+import { statusList } from 'src/data/data';
 
 const getRandomStatus = () => {
   let randNum = Math.floor(Math.random() * 5);

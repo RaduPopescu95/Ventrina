@@ -3,10 +3,7 @@ import { View, Text } from 'react-native';
 import SubscriptionHeader from '../../components/SubscriptionHeader/SubscriptionHeader';
 import SubscriptionOptions from '../../components/SubscriptionOptions/SubscriptionOptions';
 import { FlatList } from 'react-native-gesture-handler';
-import {
-  subscriptionMonth,
-  subscriptionYear,
-} from 'src/data/subscriptionOptions';
+import { subscriptionMonth, subscriptionYear } from 'src/data/data';
 import { styles } from './Subscription.style';
 
 const Subscription = () => {

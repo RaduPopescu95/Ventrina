@@ -1,22 +1,14 @@
-import { getProducts } from '../api/getProducts';
+import { getNews } from 'src/api/getNews';
 import React, { useEffect, useState } from 'react';
 
 const useNewsMockup = () => {
-  const [isLoading, setLoading] = useState<boolean>(true);
-  const [data, setData] = useState<[]>([]);
-  const [product, setProduct] = useState<{
-    id?: number;
-    title?: string;
-    price?: string;
-    cathegory?: string;
-    description?: string;
-    image?: string;
-  }>({});
+  const [isLoading, setLoading] = useState(true);
+  const [data, setData] = useState([]);
 
   useEffect(() => {
-    getProducts(setData, setLoading, setProduct);
+    getNews(setData, setLoading);
   }, []);
 
-  return { data, product, isLoading, setProduct, setData, setLoading };
+  return { data, isLoading, setData, setLoading };
 };
 export default useNewsMockup;

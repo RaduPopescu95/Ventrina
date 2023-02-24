@@ -6,6 +6,7 @@ import AntDesign from 'react-native-vector-icons/AntDesign';
 import ImageCard from 'src/components/ImageCard/ImageCard';
 import colors from 'src/data/colors';
 import { getNews } from 'src/api/getNews';
+import useNewsMockup from 'src/hooks/useNewsMockup';
 
 type NewsItem = {
   publishedAt: string | undefined;
@@ -15,12 +16,7 @@ type NewsItem = {
 };
 
 const NewsCard = () => {
-  const [isLoading, setLoading] = useState(true);
-  const [data, setData] = useState([]);
-
-  useEffect(() => {
-    getNews(setData, setLoading);
-  }, []);
+ const {data, isLoading, setData, setLoading } = useNewsMockup();
 
   return (
     <Card
