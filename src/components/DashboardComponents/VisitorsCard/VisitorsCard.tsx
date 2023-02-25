@@ -23,7 +23,6 @@ const VisitorsCard = () => {
         </View>
       }
       linkText="Do you want to receive more visits? Contact us!"
-      // linkAction={() => Linking.openURL('http://google.com')}
       linkIcon={
         <AntDesign name="arrowright" size={24} color={colors.light.blue} />
       }>

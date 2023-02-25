@@ -2,7 +2,6 @@ import React from 'react';
 import { Text } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 import Icon from 'react-native-vector-icons/Feather';
-import { Linking } from 'react-native';
 import { styles } from './DashboardHeader.style';
 import colors from 'src/data/colors';
 

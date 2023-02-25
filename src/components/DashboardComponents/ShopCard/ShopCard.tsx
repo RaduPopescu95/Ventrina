@@ -2,7 +2,7 @@ import React from 'react';
 import Card from 'src/components/Card/Card';
 import SimpleLineIcons from 'react-native-vector-icons/SimpleLineIcons';
 import AntDesign from 'react-native-vector-icons/AntDesign';
-import { Linking, Text, View } from 'react-native';
+import { Text, View } from 'react-native';
 import { styles } from './ShopCard.style';
 import colors from 'src/data/colors';
 
