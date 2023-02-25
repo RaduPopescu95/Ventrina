@@ -1,4 +1,4 @@
-import EmptyCard from 'src/components/EmptyCard/EmptyCard';
+import BackgroundContainerCard from 'src/components/BackgroundContainerCard/BackgroundContainerCard';
 import React, { useState } from 'react';
 import { View, Text } from 'react-native';
 import CheckBox from '@react-native-community/checkbox';
@@ -21,7 +21,7 @@ type Props = {
 const PriceCard = ({ product }: Props) => {
   const [toggleCheckBox, setToggleCheckBox] = useState(false);
   return (
-    <EmptyCard>
+    <BackgroundContainerCard>
       <Text style={styles.title}>Price</Text>
       <View style={styles.inputContainer}>
         <Text style={styles.label}>Original price</Text>
@@ -68,7 +68,7 @@ const PriceCard = ({ product }: Props) => {
         </View>
         <Text style={styles.checkBoxLabel}>Activate discount price</Text>
       </View>
-    </EmptyCard>
+    </BackgroundContainerCard>
   );
 };
 

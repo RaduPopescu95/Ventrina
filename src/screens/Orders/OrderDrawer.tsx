@@ -1,4 +1,4 @@
-import React, { useRef, useState, useLayoutEffect, useEffect } from 'react';
+import React, { useRef, useState, useLayoutEffect } from 'react';
 import {
   ActivityIndicator,
   DrawerLayoutAndroid,
@@ -6,7 +6,6 @@ import {
   View,
 } from 'react-native';
 import DrawerTabs from '../../components/DrawerTabs/DrawerTabs';
-import { getUsers } from 'src/api/getUsers';
 import Orders from './Orders';
 import { statusList } from 'src/data/data';
 import useUserMockup from 'src/hooks/useUsersMockup';
@@ -34,7 +33,7 @@ export type User = {
   status: string;
 };
 
-const AndroidDrawer = ({ navigation }: any) => {
+const OrderDrawer = ({ navigation }: any) => {
   const { data, user, isLoading, setUser, setData } = useUserMockup();
   const drawer = useRef<DrawerLayoutAndroid>(null);
   const [toggleCheckBox, setToggleCheckBox] = useState(false);
@@ -52,7 +51,7 @@ const AndroidDrawer = ({ navigation }: any) => {
     setHeader(false);
   };
   const handleUser = (id: number) => {
-    const userFound = data.find(x => x.id === id);
+    const userFound = data.find((x: any) => x.id === id);
     setUser(userFound);
   };
 
@@ -63,7 +62,7 @@ const AndroidDrawer = ({ navigation }: any) => {
   return (
     <>
       {isLoading ? (
-        <View style={{ ...styles.container, ...styles.activityConatiner }}>
+        <View style={{ ...styles.container, ...styles.activityViewContainer }}>
           <ActivityIndicator size={100} />
         </View>
       ) : (
@@ -97,10 +96,10 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
   },
-  activityConatiner: {
+  activityViewContainer: {
     alignItems: 'center',
     justifyContent: 'center',
   },
 });
 
-export default AndroidDrawer;
+export default OrderDrawer;

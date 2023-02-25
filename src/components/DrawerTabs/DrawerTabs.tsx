@@ -7,7 +7,7 @@ import ShippingTab from '../ShippingTab/ShippingTab';
 import DrawerHeader from '../DrawerHeader/DrawerHeader';
 import { styles } from './DrawerTabs.style';
 import colors from 'src/data/colors';
-import { User } from 'src/screens/Orders/AndroidDrawer';
+import { User } from 'src/screens/Orders/OrderDrawer';
 
 type Props = {
   navigation?: any;

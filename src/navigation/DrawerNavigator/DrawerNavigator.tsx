@@ -7,7 +7,7 @@ import Product from 'src/screens/Products/Product';
 import Subscription from 'src/screens/Subscription/Subscription';
 import Payments from 'src/screens/Payments/Payments';
 import DrawerContent from './components/DrawerContent';
-import AndroidDrawer from 'src/screens/Orders/AndroidDrawer';
+import AndroidDrawer from 'src/screens/Orders/OrderDrawer';
 
 const Drawer = createDrawerNavigator();
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import EmptyCard from 'src/components/EmptyCard/EmptyCard';
+import BackgroundContainerCard from 'src/components/BackgroundContainerCard/BackgroundContainerCard';
 import { View, Text, Image, FlatList } from 'react-native';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import { styles } from './Payments.style';
@@ -14,7 +14,7 @@ const Payments = () => {
           data={paymentOptions}
           renderItem={({ item }) => {
             return (
-              <EmptyCard key={item.name}>
+              <BackgroundContainerCard key={item.name}>
                 <View style={styles.cardHeader}>
                   <Image style={item.style} source={item.src} />
                   <TouchableOpacity style={styles.button}>
@@ -22,7 +22,7 @@ const Payments = () => {
                   </TouchableOpacity>
                 </View>
                 <Text style={styles.optionName}>{item.name}</Text>
-              </EmptyCard>
+              </BackgroundContainerCard>
             );
           }}
         />

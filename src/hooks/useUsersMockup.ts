@@ -11,7 +11,7 @@ export type User = {
 
 const useUserMockup = () => {
   const [isLoading, setLoading] = useState(true);
-  const [data, setData] = useState([]);
+  const [data, setData] = useState<any>([]);
   const [user, setUser] = useState<User>({
     id: 0,
     password: '',

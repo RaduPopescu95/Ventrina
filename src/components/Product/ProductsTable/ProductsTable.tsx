@@ -4,7 +4,7 @@ import { ScrollView } from 'react-native-gesture-handler';
 import TableRow from '../../TableRow/TableRow';
 import TableHead from '../../TableHead/TableHead';
 import TableFooter from '../../TableFooter/TableFooter';
-import EmptyCard from 'src/components/EmptyCard/EmptyCard';
+import BackgroundContainerCard from 'src/components/BackgroundContainerCard/BackgroundContainerCard';
 import { styles } from './ProductsTable.style';
 
 type ProductItem = {
@@ -17,14 +17,14 @@ type ProductItem = {
 };
 
 type Props = {
-  hanldeAddProduct?: (id?: number) => void | undefined;
+  hanldeAddProduct?: (id?: number) => any;
   data: [];
   isLoading: boolean;
 };
 
 const ProductsTable = ({ hanldeAddProduct, data, isLoading }: Props) => {
   return (
-    <EmptyCard>
+    <BackgroundContainerCard>
       <TableHead />
       <ScrollView
         style={styles.scrollView}
@@ -48,7 +48,7 @@ const ProductsTable = ({ hanldeAddProduct, data, isLoading }: Props) => {
         })}
       </ScrollView>
       <TableFooter />
-    </EmptyCard>
+    </BackgroundContainerCard>
   );
 };
 

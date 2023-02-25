@@ -1,14 +1,13 @@
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
-import EmptyCard from 'src/components/EmptyCard/EmptyCard';
+import BackgroundContainerCard from 'src/components/BackgroundContainerCard/BackgroundContainerCard';
 import OrdersHeader from '../../components/OrdersComponents/OrdersHeader/OrdersHeader';
 import OrdersTableRow from '../../components/OrdersComponents/OrdersTableRow/OrdersTableRow';
 import OrdersTableHeader from '../../components/OrdersComponents/OrdersTableHeader/OrdersTableHeader';
 import { ScrollView } from 'react-native-gesture-handler';
-import { User } from './AndroidDrawer';
+import { User } from './OrderDrawer';
 
 const Orders = ({
-  navigation,
   data,
   allStatus,
   handleUser,
@@ -21,12 +20,10 @@ const Orders = ({
   return (
     <View style={styles.container}>
       <OrdersHeader total={data.length} />
-      <EmptyCard style={styles.cardStyle}>
+      <BackgroundContainerCard style={styles.cardStyle}>
         <OrdersTableHeader
           handleAllCheckbox={handleAllCheckbox}
           toggleCheckBox={toggleCheckBox}
-          data={data}
-          setData={setData}
         />
         <ScrollView style={styles.container}>
           {data.map((user: User) => {
@@ -43,7 +40,7 @@ const Orders = ({
             );
           })}
         </ScrollView>
-      </EmptyCard>
+      </BackgroundContainerCard>
     </View>
   );
 };

@@ -1,8 +1,8 @@
 import React from 'react';
 import { View } from 'react-native';
-import { styles } from './EmptyCard.style';
+import { styles } from './BackgroundContainerCard.style';
 
-const EmptyCard = ({ children, style }: any) => {
+const BackgroundContainerCard = ({ children, style }: any) => {
   return (
     <View style={styles.container}>
       <View style={{ ...styles.mainCardView, ...style }}>{children}</View>
@@ -10,4 +10,4 @@ const EmptyCard = ({ children, style }: any) => {
   );
 };
 
-export default EmptyCard;
+export default BackgroundContainerCard;

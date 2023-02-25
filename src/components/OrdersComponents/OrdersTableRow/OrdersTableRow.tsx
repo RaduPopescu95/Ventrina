@@ -30,14 +30,14 @@ export const handleSelectColor = (state: string | undefined) => {
 };
 
 type Props = {
-  orderNumber?: number | string | undefined;
-  name?: string | undefined;
-  state?: string | undefined;
-  style?: object | undefined;
-  stateStyle?: object | undefined;
-  openDrawer?: (() => void) | undefined;
-  checkValue?: boolean | undefined;
-  handleUser?: (id: number) => void | undefined;
+  orderNumber?: number | string;
+  name?: string;
+  state?: string;
+  style?: object;
+  stateStyle?: object;
+  openDrawer?: any;
+  checkValue?: any;
+  handleUser?: any;
 };
 
 const OrdersTableRow = ({

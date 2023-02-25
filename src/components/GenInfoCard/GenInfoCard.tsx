@@ -1,4 +1,4 @@
-import EmptyCard from 'src/components/EmptyCard/EmptyCard';
+import BackgroundContainerCard from 'src/components/BackgroundContainerCard/BackgroundContainerCard';
 import React from 'react';
 import { View, Text } from 'react-native';
 import { TextInput } from 'react-native-gesture-handler';
@@ -18,7 +18,7 @@ type Props = {
 
 const GenInfoCard = ({ product }: Props) => {
   return (
-    <EmptyCard>
+    <BackgroundContainerCard>
       <Text style={styles.title}>General information</Text>
       <View style={styles.inputContainer}>
         <Text style={styles.label}>Product name</Text>
@@ -43,7 +43,7 @@ const GenInfoCard = ({ product }: Props) => {
           />
         </View>
       </View>
-    </EmptyCard>
+    </BackgroundContainerCard>
   );
 };
 

@@ -1,4 +1,4 @@
-import EmptyCard from 'src/components/EmptyCard/EmptyCard';
+import BackgroundContainerCard from 'src/components/BackgroundContainerCard/BackgroundContainerCard';
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import { TouchableOpacity } from 'react-native-gesture-handler';
@@ -15,7 +15,7 @@ type Props = {
 
 const SubscriptionOptions = ({ title, benefit, price, period }: Props) => {
   return (
-    <EmptyCard style={styles.card}>
+    <BackgroundContainerCard style={styles.card}>
       <View style={styles.container}>
         <View style={styles.section}>
           <Text style={styles.title}>{title}</Text>
@@ -33,7 +33,7 @@ const SubscriptionOptions = ({ title, benefit, price, period }: Props) => {
           </TouchableOpacity>
         </View>
       </View>
-    </EmptyCard>
+    </BackgroundContainerCard>
   );
 };
 
