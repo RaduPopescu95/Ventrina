@@ -5,7 +5,7 @@ import CustomForm from 'src/components/FormTemplate/CustomForm';
 import { styles } from './Login.style';
 import CompanyNameTitle from 'src/components/Header/CompanyName/CompanyNameTitle';
 import Header from 'src/components/Header/Header/Header';
-import { handleLogin } from 'src/api/auth/handleLogin';
+import { handleLogin } from 'src/utils/auth/handleLogin';
 
 type LoginProps = {
   navigation: any;

@@ -4,7 +4,7 @@ import CompanyNameTitle from 'src/components/Header/CompanyName/CompanyNameTitle
 import CustomForm from 'src/components/FormTemplate/CustomForm';
 import { TextInput, View } from 'react-native';
 import { styles } from './ResetPassword.style';
-import { handleResetPass } from 'src/api/auth/handleResetPass';
+import { handleResetPass } from 'src/utils/auth/handleResetPass';
 
 type RestPassProps = {
   navigation: any;

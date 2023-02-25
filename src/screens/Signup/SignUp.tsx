@@ -5,7 +5,7 @@ import Header from 'src/components/Header/Header/Header';
 import { TextInput, View } from 'react-native';
 import { styles } from './SignUp.style';
 import { NativeSyntheticEvent, TextInputChangeEventData } from 'react-native';
-import { handleSignup } from 'src/api/auth/handleSignup';
+import { handleSignup } from 'src/utils/auth/handleSignup';
 
 type SignUpProps = {
   navigation: any;

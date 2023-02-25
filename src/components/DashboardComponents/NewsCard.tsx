@@ -18,6 +18,10 @@ type NewsItem = {
 const NewsCard = () => {
   const { data, isLoading, setData, setLoading } = useNewsMockup();
 
+  useEffect(() => {
+    console.log('data.....', data);
+  }, []);
+
   return (
     <Card
       icon={
@@ -35,7 +39,7 @@ const NewsCard = () => {
         ) : (
           <>
             {data.map((newsItem: NewsItem, index) => {
-              if (index > 2 || !newsItem.urlToImage) {
+              if (!newsItem.urlToImage) {
                 return;
               }
               return (
