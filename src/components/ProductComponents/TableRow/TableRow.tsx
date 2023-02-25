@@ -6,7 +6,7 @@ import colors from 'src/data/colors';
 import { Button, Menu, Divider } from 'react-native-paper';
 
 type Props = {
-  id: number;
+  id?: number;
   image?: string | undefined;
   name?: string | undefined;
   price?: string | number | undefined;

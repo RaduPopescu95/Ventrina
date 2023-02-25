@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, Image, StyleSheet } from 'react-native';
 import { getCurrentDate } from 'src/utils/getCurrentTime';
-import { styles } from '../screens/Orders/OrderInfoTab/OrderInfoTab.style';
+import { styles } from '../../screens/Orders/OrderInfoTab/OrderInfoTab.style';
 
 const ClientSection = ({ user }: any) => {
   return (

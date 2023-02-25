@@ -1,6 +1,6 @@
 import React from 'react';
 import { Text, Linking } from 'react-native';
-import Card from 'src/components/Card/Card';
+import Card from 'src/components/DashboardComponents/Card/Card';
 import AntDesign from 'react-native-vector-icons/AntDesign';
 import { styles } from './InviteFriendsCard.style';
 import colors from 'src/data/colors';

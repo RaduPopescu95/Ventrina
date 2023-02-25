@@ -1,6 +1,6 @@
 import React from 'react';
 import { Text, TouchableOpacity, View, Image } from 'react-native';
-import Card from 'src/components/Card/Card';
+import Card from 'src/components/DashboardComponents/Card/Card';
 import Feather from 'react-native-vector-icons/Feather';
 import { styles } from './SupportCard.style';
 import colors from 'src/data/colors';

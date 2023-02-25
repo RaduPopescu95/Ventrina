@@ -1,6 +1,6 @@
 import React from 'react';
 import { Text, Linking, View } from 'react-native';
-import Card from 'src/components/Card/Card';
+import Card from 'src/components/DashboardComponents/Card/Card';
 import Feather from 'react-native-vector-icons/Feather';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import AntDesign from 'react-native-vector-icons/AntDesign';

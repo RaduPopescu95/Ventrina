@@ -5,7 +5,7 @@ import {
   StyleSheet,
   View,
 } from 'react-native';
-import DrawerTabs from '../../components/DrawerTabs/DrawerTabs';
+import DrawerTabs from '../../components/OrdersComponents/DrawerTabs/DrawerTabs';
 import Orders from './Orders';
 import { statusList } from 'src/data/data';
 import useUserMockup from 'src/hooks/useUsersMockup';

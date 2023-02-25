@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text } from 'react-native';
 import CheckBox from '@react-native-community/checkbox';
-import MenuArrows from 'src/components/MenuArrows';
+import MenuArrows from 'src/components/OrdersComponents/MenuArrows';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import { styles } from './OrdersTableHeader.style';
 

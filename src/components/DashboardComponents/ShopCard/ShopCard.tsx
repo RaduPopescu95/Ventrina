@@ -1,5 +1,5 @@
 import React from 'react';
-import Card from 'src/components/Card/Card';
+import Card from 'src/components/DashboardComponents/Card/Card';
 import SimpleLineIcons from 'react-native-vector-icons/SimpleLineIcons';
 import AntDesign from 'react-native-vector-icons/AntDesign';
 import { Text, View } from 'react-native';

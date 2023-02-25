@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text } from 'react-native';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
-import { styles } from '../screens/Orders/OrderInfoTab/OrderInfoTab.style';
+import { styles } from '../../screens/Orders/OrderInfoTab/OrderInfoTab.style';
 import colors from 'src/data/colors';
 
 export const handleSelectColor = (state: string | undefined) => {

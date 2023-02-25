@@ -1,6 +1,6 @@
 import React from 'react';
 import { Text, View, Image } from 'react-native';
-import Card from 'src/components/Card/Card';
+import Card from 'src/components/DashboardComponents/Card/Card';
 import AntDesign from 'react-native-vector-icons/AntDesign';
 import colors from 'src/data/colors';
 import { styles } from './AdsCard.style';

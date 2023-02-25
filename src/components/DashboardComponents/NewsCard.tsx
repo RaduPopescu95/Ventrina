@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { StyleSheet, Linking, Image, ActivityIndicator } from 'react-native';
-import Card from 'src/components/Card/Card';
+import Card from 'src/components/DashboardComponents/Card/Card';
 import Feather from 'react-native-vector-icons/Feather';
 import AntDesign from 'react-native-vector-icons/AntDesign';
-import ImageCard from 'src/components/ImageCard/ImageCard';
+import ImageCard from 'src/components/DashboardComponents/ImageCard/ImageCard';
 import colors from 'src/data/colors';
 import { getNews } from 'src/api/getNews';
 import useNewsMockup from 'src/hooks/useNewsMockup';
