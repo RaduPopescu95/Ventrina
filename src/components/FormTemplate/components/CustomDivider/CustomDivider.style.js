@@ -12,10 +12,4 @@ export const styles = StyleSheet.create({
     borderBottomWidth: StyleSheet.hairlineWidth,
     width: '40%',
   },
-  dividerMarginR: {
-    marginRight: '5%',
-  },
-  dividerMarginL: {
-    marginLeft: '5%',
-  },
 });

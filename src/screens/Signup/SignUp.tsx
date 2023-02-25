@@ -17,21 +17,15 @@ const SignUp = (props: SignUpProps): JSX.Element => {
   const [password, setPassword] = useState('');
   const { navigation } = props;
 
-  const handleshopName = (
-    event: NativeSyntheticEvent<TextInputChangeEventData>,
-  ) => {
+  const handleshopName = (event: any) => {
     setNameSurname(event.nativeEvent.text);
   };
 
-  const handleEmail = (
-    event: NativeSyntheticEvent<TextInputChangeEventData>,
-  ) => {
+  const handleEmail = (event: any) => {
     setEmail(event.nativeEvent.text);
   };
 
-  const handlePassword = (
-    event: NativeSyntheticEvent<TextInputChangeEventData>,
-  ) => {
+  const handlePassword = (event: any) => {
     setPassword(event.nativeEvent.text);
   };
 
@@ -46,12 +40,12 @@ const SignUp = (props: SignUpProps): JSX.Element => {
           title="Create your e-commerce"
           subtitle="Try Vetrina Live for free in the next 7 days. Open a shop in few minutes! No credit card required."
           submitText="Create your shop"
-          submitAction={() => handleSignup(nameSurname, email, password)}
-          divider={true}
-          extraOptions={true}
+          handleSubmit={() => handleSignup(nameSurname, email, password)}
+          isDivider={true}
+          isSignInOptions={true}
           footer1="Do you have an account?"
           footerLink="Sign in now"
-          footerAction={() => navigation.navigate('Login')}>
+          footerNavigate={() => navigation.navigate('Login')}>
           <TextInput
             style={styles.textInput}
             placeholder="Name and Surname"

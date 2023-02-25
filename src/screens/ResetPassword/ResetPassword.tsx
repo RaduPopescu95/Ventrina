@@ -2,12 +2,7 @@ import React, { useState } from 'react';
 import Header from 'src/components/Header/Header/Header';
 import CompanyNameTitle from 'src/components/Header/CompanyName/CompanyNameTitle';
 import CustomForm from 'src/components/FormTemplate/CustomForm';
-import {
-  TextInput,
-  NativeSyntheticEvent,
-  TextInputChangeEventData,
-  View,
-} from 'react-native';
+import { TextInput, View } from 'react-native';
 import { styles } from './ResetPassword.style';
 import { handleResetPass } from 'src/api/auth/handleResetPass';
 
@@ -19,9 +14,7 @@ const ResetPassword = (props: RestPassProps) => {
   const [email, setEmail] = useState('');
   const { navigation } = props;
 
-  const handleEmail = (
-    event: NativeSyntheticEvent<TextInputChangeEventData>,
-  ) => {
+  const handleEmail = (event: any) => {
     setEmail(event.nativeEvent.text);
   };
 
@@ -36,12 +29,12 @@ const ResetPassword = (props: RestPassProps) => {
           title="Forgot Password"
           subtitle="Enter your email and you'll receive an email to recover ypur password."
           submitText="Send email"
-          submitAction={() => handleResetPass(email, navigation)}
-          divider={false}
-          extraOptions={false}
+          handleSubmit={() => handleResetPass(email, navigation)}
+          isDivider={false}
+          isSignInOptions={false}
           footer1="Do you have an account?"
           footerLink="Sign in now"
-          footerAction={() => navigation.navigate('Login')}>
+          footerNavigate={() => navigation.navigate('Login')}>
           <TextInput
             style={styles.textInput}
             placeholder="Email"

@@ -1,8 +1,8 @@
 import React from 'react';
 import { TouchableOpacity, Image, Text } from 'react-native';
-import { styles } from './ExtraOptions.style';
+import { styles } from './SignInOptions.style';
 
-const ExtraOptions = () => {
+const SignInOptions = () => {
   return (
     <>
       <TouchableOpacity style={styles.extraSubmit}>
@@ -23,4 +23,4 @@ const ExtraOptions = () => {
   );
 };
 
-export default ExtraOptions;
+export default SignInOptions;

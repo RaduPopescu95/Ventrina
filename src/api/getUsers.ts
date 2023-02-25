@@ -1,4 +1,3 @@
-// import { allOrdersStatus } from 'src/utils/getRandomStatus';
 import { statusList } from 'src/data/data';
 
 const getRandomStatus = () => {

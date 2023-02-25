@@ -2,11 +2,11 @@ import { StyleSheet } from 'react-native';
 import colors from 'src/data/colors';
 
 export const styles = StyleSheet.create({
-  title1: {
+  title: {
     fontSize: 28,
     fontWeight: 'bold',
   },
-  title2: {
+  subTitle: {
     fontSize: 28,
     color: colors.light.blue,
     fontWeight: 'bold',

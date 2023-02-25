@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { TextInput, View } from 'react-native';
+import { Input } from 'react-native-elements';
 import CustomForm from 'src/components/FormTemplate/CustomForm';
 import { styles } from './Login.style';
-import { NativeSyntheticEvent, TextInputChangeEventData } from 'react-native';
 import CompanyNameTitle from 'src/components/Header/CompanyName/CompanyNameTitle';
 import Header from 'src/components/Header/Header/Header';
 import { handleLogin } from 'src/api/auth/handleLogin';
@@ -35,13 +35,13 @@ const Login = (props: LoginProps) => {
           title="Welcome"
           subtitle="Enter your email and password to enter your account."
           submitText="Login"
-          submitAction={() => handleLogin(email, password)}
-          divider={true}
-          extraOptions={true}
+          handleSubmit={() => handleLogin(email, password)}
+          isDivider={true}
+          isSignInOptions={true}
           footer1="Did you forget your password?"
           footer2="Don't you have an account?"
           footerLink="Sign up now"
-          footerAction={() => navigation.navigate('SignUp')}>
+          footerNavigate={() => navigation.navigate('SignUp')}>
           <TextInput
             style={styles.textInput}
             placeholder="Email"

@@ -2,7 +2,7 @@ import React from 'react';
 import { TouchableOpacity, Text, View } from 'react-native';
 import CustomDivider from './components/CustomDivider/CustomDivider';
 import HeaderForm from './components/HeaderForm/HeaderForm';
-import ExtraOptions from './components/ExtraOptions/ExtraOptions';
+import SignInOptions from './components/SingInOptions/SignInOptions';
 import SupportBtn from './components/SupportBtn/SupportBtn';
 import { styles } from './CustomForm.style';
 
@@ -12,13 +12,13 @@ type CustomFormProps = {
   title: string;
   subtitle: string;
   submitText: string;
-  divider: boolean;
-  extraOptions: boolean;
+  isDivider: boolean;
+  isSignInOptions: boolean;
   footer1: string;
   footer2?: string;
   footerLink: string;
-  submitAction: any;
-  footerAction: any;
+  handleSubmit: any;
+  footerNavigate: any;
 };
 
 const CustomForm = (props: CustomFormProps) => {
@@ -26,28 +26,28 @@ const CustomForm = (props: CustomFormProps) => {
     navigation,
     children,
     submitText,
-    divider,
+    isDivider,
     footer1,
     footer2,
     footerLink,
-    extraOptions,
+    isSignInOptions,
     title,
     subtitle,
-    footerAction,
-    submitAction,
+    footerNavigate,
+    handleSubmit,
   } = props;
 
   return (
     <>
       <HeaderForm title={title} subtitle={subtitle} />
       {children}
-      {submitAction && (
-        <TouchableOpacity style={styles.submit} onPress={submitAction}>
+      {handleSubmit && (
+        <TouchableOpacity style={styles.submit} onPress={handleSubmit}>
           <Text style={styles.submitText}>{submitText}</Text>
         </TouchableOpacity>
       )}
-      {divider && <CustomDivider />}
-      {extraOptions && <ExtraOptions />}
+      {isDivider && <CustomDivider />}
+      {isSignInOptions && <SignInOptions />}
       {footer2 && (
         <TouchableOpacity onPress={() => navigation.navigate('ResetPassword')}>
           <Text style={styles.resetPass}>{footer1}</Text>
@@ -60,7 +60,7 @@ const CustomForm = (props: CustomFormProps) => {
           ) : footer1 ? (
             <Text>{footer1} </Text>
           ) : null}
-          <TouchableOpacity onPress={footerAction}>
+          <TouchableOpacity onPress={footerNavigate}>
             <Text style={styles.redirect}>{footerLink}</Text>
           </TouchableOpacity>
         </View>

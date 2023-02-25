@@ -5,9 +5,9 @@ import { styles } from './CustomDivider.style';
 const CustomDivider = () => {
   return (
     <View style={styles.separator}>
-      <View style={[styles.divider, styles.dividerMarginR]} />
+      <View style={[styles.divider, { marginRight: '5%' }]} />
       <Text>OR</Text>
-      <View style={[styles.divider, styles.dividerMarginL]} />
+      <View style={[styles.divider, { marginLeft: '5%' }]} />
     </View>
   );
 };

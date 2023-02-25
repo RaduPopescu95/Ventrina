@@ -7,7 +7,7 @@ export const styles = StyleSheet.create({
     justifyContent: 'center',
     flex: 1,
   },
-  title: {},
+
   viewBody: {
     flex: 9,
     width: '100%',
