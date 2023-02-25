@@ -4,7 +4,30 @@ import SimpleLineIcons from 'react-native-vector-icons/SimpleLineIcons';
 import CheckBox from '@react-native-community/checkbox';
 import colors from 'src/data/colors';
 import { styles } from './OrdersTableRow.style';
-import { selectColor } from 'src/utils/selectColor';
+
+export const handleSelectColor = (state: string | undefined) => {
+  let color = '';
+  switch (state) {
+    case 'Shipped':
+      color = colors.light.purple;
+      break;
+    case 'New':
+      color = colors.light.blue;
+      break;
+    case 'Return made':
+      color = colors.light.weirdPurple;
+      break;
+    case 'Cancelled':
+      color = colors.light.red;
+      break;
+    case 'In progress':
+      color = colors.light.orange;
+      break;
+    default:
+      color = colors.light.white;
+  }
+  return color;
+};
 
 type Props = {
   orderNumber?: number | string | undefined;
@@ -52,7 +75,7 @@ const OrdersTableRow = ({
         <TouchableOpacity
           style={{
             ...styles.button,
-            backgroundColor: selectColor(state),
+            backgroundColor: handleSelectColor(state),
           }}
           onPress={() => {
             handleUser(orderNumber);

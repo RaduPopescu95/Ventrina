@@ -1,4 +1,20 @@
-import { allOrdersStatus } from 'src/utils/getRandomStatus';
+// import { allOrdersStatus } from 'src/utils/getRandomStatus';
+import { statusList } from 'src/data/data';
+
+const getRandomStatus = () => {
+  let randNum = Math.floor(Math.random() * 3);
+  return statusList[randNum];
+};
+
+const ordersStatus = () => {
+  const array = [];
+  for (let i = 0; i <= 30; ++i) {
+    array.push(getRandomStatus());
+  }
+  return array;
+};
+
+const allOrdersStatus = ordersStatus();
 
 export const getUsers = async (
   setData?: any,

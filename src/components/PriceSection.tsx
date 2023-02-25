@@ -3,7 +3,31 @@ import { View, Text } from 'react-native';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import { styles } from '../screens/Orders/OrderInfoTab/OrderInfoTab.style';
-import { selectColor } from 'src/utils/selectColor';
+import colors from 'src/data/colors';
+
+export const handleSelectColor = (state: string | undefined) => {
+  let color = '';
+  switch (state) {
+    case 'Shipped':
+      color = colors.light.purple;
+      break;
+    case 'New':
+      color = colors.light.blue;
+      break;
+    case 'Return made':
+      color = colors.light.weirdPurple;
+      break;
+    case 'Cancelled':
+      color = colors.light.red;
+      break;
+    case 'In progress':
+      color = colors.light.orange;
+      break;
+    default:
+      color = colors.light.white;
+  }
+  return color;
+};
 
 const PriceSection = ({ user }: any) => {
   return (
@@ -26,7 +50,7 @@ const PriceSection = ({ user }: any) => {
       <TouchableOpacity
         style={{
           ...styles.shippingStatus,
-          backgroundColor: selectColor(user.status),
+          backgroundColor: handleSelectColor(user.status),
         }}>
         <Text style={styles.shippingStatusText}>{user.status}</Text>
         <MaterialIcons name="keyboard-arrow-down" size={24} color="#fff" />

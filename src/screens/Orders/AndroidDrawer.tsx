@@ -8,9 +8,23 @@ import {
 import DrawerTabs from '../../components/DrawerTabs/DrawerTabs';
 import { getUsers } from 'src/api/getUsers';
 import Orders from './Orders';
-import { allOrdersStatus } from 'src/utils/getRandomStatus';
 import { statusList } from 'src/data/data';
 import useUserMockup from 'src/hooks/useUsersMockup';
+
+const getRandomStatus = () => {
+  let randNum = Math.floor(Math.random() * 3);
+  return statusList[randNum];
+};
+
+const ordersStatus = () => {
+  const array = [];
+  for (let i = 0; i <= 30; ++i) {
+    array.push(getRandomStatus());
+  }
+  return array;
+};
+
+const allOrdersStatus = ordersStatus();
 
 export type User = {
   id: number;
