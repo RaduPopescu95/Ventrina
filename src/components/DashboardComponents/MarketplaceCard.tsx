@@ -5,7 +5,7 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import AntDesign from 'react-native-vector-icons/AntDesign';
 import { ScrollView } from 'react-native-gesture-handler';
-import ExtensionCard from 'src/components/DashboardComponents/ExtensionCard/ExtensionCard';
+import HorizontalCard from 'src/components/DashboardComponents/HorizontalCard/HorizontalCard';
 import colors from 'src/data/colors';
 
 const MarketplaceCard = () => {
@@ -20,12 +20,11 @@ const MarketplaceCard = () => {
       }
       title="Extensions Marketplace"
       linkText="Discover all extensions"
-      linkAction={() => Linking.openURL('http://google.com')}
       linkIcon={
         <AntDesign name="arrowright" size={24} color={colors.light.blue} />
       }>
       <ScrollView horizontal={true} style={styles.scrollView}>
-        <ExtensionCard
+        <HorizontalCard
           icon={
             <MaterialCommunityIcons
               name="web"
@@ -36,13 +35,13 @@ const MarketplaceCard = () => {
           subTitle="Custom Domain"
           color={colors.light.orange}
         />
-        <ExtensionCard
+        <HorizontalCard
           title1="+50"
           title2="Products"
           subTitle="+50 Products"
           color={colors.light.wak}
         />
-        <ExtensionCard
+        <HorizontalCard
           icon={
             <MaterialCommunityIcons
               name="web"

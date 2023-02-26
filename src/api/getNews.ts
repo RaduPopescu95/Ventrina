@@ -9,7 +9,7 @@ export const getNews = async (
     );
     const json = await response.json();
     if (setData) {
-      console.log(json.articles);
+      // console.log(json.articles);
       setData(json.articles);
     } else {
       setNews(json.articles);

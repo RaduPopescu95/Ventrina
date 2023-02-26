@@ -20,7 +20,7 @@ const NewsCard = () => {
 
   useEffect(() => {
     console.log('data.....', data);
-  }, []);
+  }, [data]);
 
   return (
     <Card
@@ -29,7 +29,6 @@ const NewsCard = () => {
       }
       title="Latest news"
       linkText="Visit our blog"
-      linkAction={() => Linking.openURL('http://google.com')}
       linkIcon={
         <Feather name="external-link" size={24} color={colors.light.blue} />
       }>
@@ -39,7 +38,7 @@ const NewsCard = () => {
         ) : (
           <>
             {data.map((newsItem: NewsItem, index) => {
-              if (!newsItem.urlToImage) {
+              if (index > 3 || !newsItem.urlToImage) {
                 return;
               }
               return (

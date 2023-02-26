@@ -10,21 +10,6 @@ import Orders from './Orders';
 import { statusList } from 'src/data/data';
 import useUserMockup from 'src/hooks/useUsersMockup';
 
-const getRandomStatus = () => {
-  let randNum = Math.floor(Math.random() * 3);
-  return statusList[randNum];
-};
-
-const ordersStatus = () => {
-  const array = [];
-  for (let i = 0; i <= 30; ++i) {
-    array.push(getRandomStatus());
-  }
-  return array;
-};
-
-const allOrdersStatus = ordersStatus();
-
 export type User = {
   id: number;
   password: string;
@@ -71,15 +56,11 @@ const OrderDrawer = ({ navigation }: any) => {
           drawerWidth={400}
           drawerPosition="right"
           renderNavigationView={() => (
-            <DrawerTabs
-              closeDrawer={closeDrawer}
-              navigation={navigation}
-              user={user}
-            />
+            <DrawerTabs closeDrawer={closeDrawer} user={user} />
           )}>
           <Orders
             data={data}
-            allStatus={allOrdersStatus}
+            allStatus={statusList}
             handleUser={handleUser}
             handleAllCheckbox={handleAllCheckbox}
             toggleCheckBox={toggleCheckBox}

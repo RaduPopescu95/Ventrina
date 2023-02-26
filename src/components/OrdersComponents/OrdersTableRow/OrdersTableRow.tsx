@@ -62,9 +62,7 @@ const OrdersTableRow = ({
         <CheckBox
           disabled={false}
           value={toggleCheckBox}
-          onValueChange={(
-            newValue: boolean | ((prevState: boolean) => boolean),
-          ) => setToggleCheckBox(newValue)}
+          onValueChange={(newValue: any) => setToggleCheckBox(newValue)}
         />
         <Text style={style ? style : styles.column1Text}>{orderNumber}</Text>
       </View>

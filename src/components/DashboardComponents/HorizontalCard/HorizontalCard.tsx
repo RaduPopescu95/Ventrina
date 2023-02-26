@@ -1,6 +1,6 @@
 import React from 'react';
 import { Text, View } from 'react-native';
-import { styles } from './ExtensionCard.style';
+import { styles } from './HorizontalCard.style';
 
 type Props = {
   icon?: JSX.Element | React.ReactElement | undefined;
@@ -10,7 +10,7 @@ type Props = {
   color?: string | undefined;
 };
 
-const ExtensionCard = ({ icon, title1, title2, subTitle, color }: Props) => {
+const HorizontalCard = ({ icon, title1, title2, subTitle, color }: Props) => {
   return (
     <View style={styles.container}>
       <View style={{ ...styles.mainCardView, backgroundColor: color }}>
@@ -28,4 +28,4 @@ const ExtensionCard = ({ icon, title1, title2, subTitle, color }: Props) => {
   );
 };
 
-export default ExtensionCard;
+export default HorizontalCard;

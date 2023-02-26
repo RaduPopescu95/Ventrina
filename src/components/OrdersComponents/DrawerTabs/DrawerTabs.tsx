@@ -10,14 +10,13 @@ import colors from 'src/data/colors';
 import { User } from 'src/screens/Orders/OrderDrawer';
 
 type Props = {
-  navigation?: any;
   closeDrawer?: () => void | undefined;
   user: User;
 };
 
 const Tab = createMaterialTopTabNavigator();
 
-const DrawerTabs = ({ navigation, closeDrawer, user }: Props) => {
+const DrawerTabs = ({ closeDrawer, user }: Props) => {
   return (
     <View style={styles.container}>
       <DrawerHeader closeDrawer={closeDrawer} orderNumber={user.id} />

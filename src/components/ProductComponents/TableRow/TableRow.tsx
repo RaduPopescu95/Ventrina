@@ -58,7 +58,7 @@ const TableRow = ({
               />
             </Button>
           }>
-          <Menu.Item onPress={() => Alert.alert('View')} title="View details" />
+          <Menu.Item title="View details" />
           <Menu.Item
             onPress={() => {
               hanldeAddProduct ? hanldeAddProduct(id) : Alert.alert('Edit');
@@ -66,12 +66,7 @@ const TableRow = ({
             title="Edit"
           />
           <Divider />
-          <Menu.Item
-            onPress={() => {
-              Alert.alert('Delete');
-            }}
-            title="Delete"
-          />
+          <Menu.Item title="Delete" />
         </Menu>
       </View>
     </>

@@ -10,7 +10,7 @@ type Props = {
   title?: string | undefined;
   option?: string | JSX.Element | undefined;
   linkText?: string | undefined;
-  linkAction?: (event: GestureResponderEvent) => Promise<any> | undefined;
+  linkAction?: any;
   linkIcon?: JSX.Element | undefined;
   backColor?: string | undefined;
   style?: object;
