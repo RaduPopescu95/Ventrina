@@ -23,7 +23,6 @@ const OrdersCard = () => {
         </View>
       }
       linkText="10 free tips to increase your sales"
-      // linkAction={() => Linking.openURL('http://google.com')}
       linkIcon={
         <AntDesign name="arrowright" size={24} color={colors.light.blue} />
       }>

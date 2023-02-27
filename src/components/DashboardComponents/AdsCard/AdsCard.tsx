@@ -38,7 +38,7 @@ const AdsCard = () => {
           }}
           style={styles.logo}
         />
-        <Text style={{ ...styles.white, ...styles.title }}>Trutpilot</Text>
+        <Text style={{ ...styles.white, ...styles.title }}>Trustpilot</Text>
       </View>
       <View>
         <Text style={styles.white}>

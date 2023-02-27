@@ -1,20 +1,5 @@
 import { statusList } from 'src/data/data';
 
-const getRandomStatus = () => {
-  let randNum = Math.floor(Math.random() * 3);
-  return statusList[randNum];
-};
-
-const ordersStatus = () => {
-  const array = [];
-  for (let i = 0; i <= 30; ++i) {
-    array.push(getRandomStatus());
-  }
-  return array;
-};
-
-const allOrdersStatus = ordersStatus();
-
 export const getUsers = async (
   setData?: any,
   setLoading?: any,
@@ -27,7 +12,7 @@ export const getUsers = async (
     const data = json.users;
     // console.log('Data length...', data.length);
     for (let i = 0; i < data.length; ++i) {
-      data[i].status = allOrdersStatus[i];
+      data[i].status = statusList[i];
     }
     if (setData) {
       setData(data);

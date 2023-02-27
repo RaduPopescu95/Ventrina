@@ -38,7 +38,7 @@ const NewsCard = () => {
         ) : (
           <>
             {data.map((newsItem: NewsItem, index) => {
-              if (index > 3 || !newsItem.urlToImage) {
+              if (index > 3) {
                 return;
               }
               return (
@@ -48,12 +48,16 @@ const NewsCard = () => {
                     <Image
                       style={styles.image}
                       source={{
-                        uri: newsItem.urlToImage,
+                        uri: 'https://picsum.photos/200',
+                        // uri: newsItem.urlToImage,
                       }}
                     />
                   }
                   title={newsItem.title}
-                  subTitle={newsItem.description}
+                  // subTitle={newsItem.description}
+                  subTitle={
+                    '10 profitable Things to make and Sell Online for...'
+                  }
                   timeToRead={newsItem.publishedAt}
                 />
               );

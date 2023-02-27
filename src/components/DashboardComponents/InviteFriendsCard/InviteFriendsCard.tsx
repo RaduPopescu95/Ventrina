@@ -13,7 +13,6 @@ const InviteFriendsCard = () => {
       }
       title="Invite a friend!"
       linkText="Start inviting friend!"
-      linkAction={() => Linking.openURL('http://google.com')}
       linkIcon={
         <AntDesign name="arrowright" size={24} color={colors.light.blue} />
       }>

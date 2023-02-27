@@ -15,7 +15,7 @@ const SupportCard = () => {
       <View style={styles.helpPerson}>
         <Image
           source={{
-            uri: 'https://cdn.pixabay.com/photo/2017/11/06/13/45/cap-2923682_1280.jpg',
+            uri: 'https://pixabay.com/get/g97b0e78ff6eb240340d432a0a5d4b47aaadef55dfaafc15d7a7d0935ce08297a6c0b6fe7e652174e863f10f2a768cfb7167afa62cadff6d81b8c7b9c9fe9fe0f6ae49377d058ff00e5e6f380eabcc1aa_1920.jpg',
           }}
           style={styles.avatar}
         />
